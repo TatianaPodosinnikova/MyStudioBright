@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bright — студия английского языка, Майкоп</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--red:#e21b2b;--dark-red:#c11420;--white:#ffffff;--accent:rgba(255,255,255,0.08)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,var(--red),var(--dark-red));color:var(--white)}
+    a{color:inherit;text-decoration:none}
+    header{display:flex;align-items:center;justify-content:space-between;padding:22px 28px;background:linear-gradient(90deg,rgba(255,255,255,0.04),transparent);backdrop-filter:saturate(120%)}
+    .logo{display:flex;align-items:center;gap:12px;font-weight:800}
+    .logo .mark{width:48px;height:48px;border-radius:10px;background:var(--white);display:grid;place-items:center;color:var(--red);font-weight:800;font-size:18px}
+    nav{display:flex;gap:18px;align-items:center}
+    .btn{background:transparent;border:2px solid rgba(255,255,255,0.18);padding:10px 14px;border-radius:10px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;padding:48px 28px;align-items:center}
+    .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center}
+    h1{font-size:40px;line-height:1.02;margin:0}
+    p.lead{margin:12px 0 18px;font-size:18px;opacity:0.95}
+    .cta{display:flex;gap:12px}
+    .primary{background:var(--white);color:var(--red);padding:14px 18px;border-radius:12px;font-weight:700}
+    .secondary{background:transparent;border:2px solid rgba(255,255,255,0.12);padding:12px 16px;border-radius:12px}
+    .card{background:var(--accent);padding:18px;border-radius:12px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+    .feature{padding:12px;border-radius:10px;background:rgba(255,255,255,0.03)}
+    .prices{display:flex;gap:12px;margin-top:18px}
+    .price{flex:1;padding:14px;border-radius:10px;background:rgba(255,255,255,0.03);text-align:center}
+    main{max-width:1100px;margin:18px auto;padding:0 18px}
+    section{margin:28px 0}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    footer{padding:24px 18px;text-align:center;opacity:0.95}
+    /* responsive */
+    @media (max-width:920px){.hero-inner{grid-template-columns:1fr} .features{grid-template-columns:repeat(2,1fr)} .grid-2{grid-template-columns:1fr}}
+    @media (max-width:520px){h1{font-size:30px}.logo .mark{width:40px;height:40px}}
+    .pulse{animation:pulse 2s infinite}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+    .map{width:100%;height:220px;border-radius:12px;overflow:hidden;border:2px solid rgba(255,255,255,0.06)}
+    .testimonial{background:rgba(255,255,255,0.03);padding:14px;border-radius:10px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white)}
+    label{font-size:13px;display:block;margin-bottom:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><div class="mark">B</div><div>
+      <div style="font-size:16px">Bright</div>
+      <div style="font-size:12px;opacity:0.9">студия английского — Майкоп</div>
+    </div></div>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#services">Курсы</a>
+      <a href="#prices">Цены</a>
+      <a href="#contacts" class="btn">Контакты</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>Bright — английский для детей от 5 лет в Майкопе</h1>
+        <p class="lead">Увлекательные занятия с опытным преподавателем. Разговорная практика,интенсивы и клуб по чтению.</p>
+        <div class="cta">
+          <a class="primary" href="#contacts">Записаться на пробный урок</a>
+          <a class="secondary" href="#services">Узнать больше</a>
+        </div>
+
+        <div class="features" style="margin-top:22px">
+          <div class="feature"><strong>Для детей</strong><div>Игры и проекты, 5–12 лет</div></div>
+          <div class="feature"><strong>Подростки</strong><div>Подготовка к ЕГЭ/ОГЭ</div></div>
+          
+
+        <div class="prices" aria-hidden="true">
+          <div class="price"><div style="font-weight:800;font-size:20px">Пробный</div><div>Бесплатно</div></div>
+          <div class="price"><div style="font-weight:800;font-size:20px">Индивидуально</div><div>от 800 ₽</div></div>
+          <div class="price"><div style="font-weight:800;font-size:20px">Группа</div><div>от 550 ₽</div></div>
+        </div>
+      </div>
+
+      <aside class="card pulse">
+        <div style="font-weight:800;font-size:18px">Что вас ждёт</div>
+        <ul style="margin:12px 0 0;padding-left:18px;line-height:1.6">
+          <li>Групповые занятия по британским учебникам</li>
+          <li>Практика речи на каждом уроке</li>
+          <li>Интересные домашние задания</li>
+          <li>Дружеская атмосфера и игровые приемы</li>
+        </ul>
+
+        <div style="margin-top:14px">
+          <a class="primary" href="#contacts">Записаться</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>О студии</h2>
+      <div class="grid-2">
+        <p>Bright — небольшая студия английского языка в Майкопе. Мы помогаем детям и подросткам говорить уверенно и понимать английский язык через живые задания, разговоры и проекты. Команда — носитель языка и опытные русскоязычные преподаватели.</p>
+        <div class="testimonial"><strong>Татьяна, руководитель:</strong><div style="margin-top:8px">Мы верим в обучение через практику: мало теории, много говорения и интересных тем. Приходите на пробный урок — он бесплатный.</div></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Курсы</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+        <div class="card">
+          <strong>Детская группа</strong>
+          <div>2 раза в неделю, игры, проекты</div>
+        </div>
+        <div class="card">
+          <strong>Подготовка к ОГЭ/ЕГЭ</strong>
+          <div>Интенсивы, разбор заданий, практика.</div>
+        </div>
+        <div class="card">
+          <strong>Клуб по чтению.</strong>
+          <div> Читаем книги известных британских писаьтелей в оригинале.</div>
+        </div>
+        <div class="card">
+          <strong>Индивидуальные уроки</strong>
+          <div>План по целям учеников</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices">
+      <h2>Цены — пример</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div style="flex:1;min-width:220px" class="card">
+          <strong>Индивидуально</strong>
+          <div style="margin-top:8px">от 800 ₽ / урок</div>
+        </div>
+        <div style="flex:1;min-width:220px" class="card">
+          <strong>Группа</strong>
+          <div style="margin-top:8px">от 550 ₽ / человек</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <div class="grid-2">
+        <div>
+          <p><strong>Адрес:</strong> г. Майкоп, мкр "Восход" 6-й Переулок дом 1</p>
+          <p><strong>Телефон:</strong> <a href="tel:+70000000000">+7 (918)333-90-12</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@bright-english.ru">info@bright-english.ru</a></p>
+
+          <p style="margin-top:12px">Мы в <a href="#">Telegram</a> и <a href="#">VK</a>.</p>
+
+          <form onsubmit="event.preventDefault();alert('Спасибо! Мы свяжемся с вами.');" style="margin-top:12px">
+            <label for="name">https://t.me/englishmaikop</label>
+            <input id="name" placeholder="Ваше имя">
+            <label for="phone"> </label>
+            <input id="phone" placeholder="Телефон или email">
+            <label for="msg">Сообщение</label>
+            <textarea id="msg" rows="3" placeholder="Напишите сообщение"></textarea>
+            <div style="margin-top:10px"><button class="primary" type="submit">Отправить</button></div>
+          </form>
+        </div>
+
+        <div>
+          <div class="map" aria-hidden="true">
+            <!-- Если хотите — замените iframe на реальную карту Google Maps -->
+            <iframe src="https://www.google.com/maps?q=Maykop&output=embed" width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px;flex-direction:column">
+            <div class="testimonial"><strong>Часы работы</strong><div style="margin-top:6px">Пн–Пт: 10:00–20:00<br>Сб: 10:00–15:00</div></div>
+            <div class="testimonial"><strong>Подарок</strong><div style="margin-top:6px">Первое занятие — пробный и бесплатно.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Bright — студия английского, Майкоп · <a href="#contacts">Записаться на пробный урок</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){
+      e.preventDefault(); const t=document.querySelector(this.getAttribute('href')); if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+    }));
+  </script>
+  <section id="reviews" style="background:#b00000;color:white;padding:60px 20px;">
+    <h2 style="text-align:center;margin-bottom:40px;font-size:32px;">Отзывы</h2>
+
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:30px;">
+
+      <div style="background:#d00000;padding:25px;border-radius:10px;">
+        <p style="font-size:18px;line-height:1.5;">
+          <strong>emiliazavalina:</strong> Для меня очень важно, чтобы ребенок хотел заниматься английским, без этого желания не будет хороших результатов. Мой сын уже четвертый год будет заниматься у Татьяны Александровны и не на минуту не пожалела о выборе педагога. Школьную программу давно опередили, дома самостоятельно выполняет задания, и самое важное — он понимает, что делает и что нужно делать. Татьяне Александровне огромная благодарность и уважение, это тот педагог, которому можно смело доверить не только ребенка, но и всю систему обучения. Всем знакомым рекомендую обращаться только к ней.
+        </p>
+      </div>
+
+      <div style="background:#d00000;padding:25px;border-radius:10px;">
+        <p style="font-size:18px;line-height:1.5;">
+          Хочу выразить благодарность Татьяне Александровне за её труд, за профессионализм, за старание. Мы приступили к изучению английского языка в студии год назад. Знания сына были на очень низком уровне — он умел только более‑менее читать. Даже зная его способности, я не ожидала такого прогресса. Ребенок пополнил словарный запас, строит предложения, понимает английскую речь, в том числе из аудио и видео. Учитель постоянно общается с детьми на английском, задания интересные и разнообразные. Сын посещает занятия с удовольствием. Радует выбор учебников и видеоматериала. Никогда не думала, что изучение английского может быть таким интересным. Результат налицо — обязательно продолжим занятия.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
